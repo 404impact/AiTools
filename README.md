@@ -45,7 +45,6 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html5" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css3" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/>
 </div>
 
 🧠 **AiTools Suite** is a collection of AI-powered web applications designed to simplify various tasks through the power of artificial intelligence. Each tool in the suite leverages modern AI technologies like OpenAI's GPT models, Google's Gemini, AssemblyAI, and more to provide intelligent analysis and automation.
