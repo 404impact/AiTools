@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Python-3.9+-blue.svg" alt="Python 3.9+">
   <img src="https://img.shields.io/badge/Flask-3.1.1-green.svg" alt="Flask 3.1.1">
   <img src="https://img.shields.io/badge/OpenAI-GPT--4o-orange.svg" alt="OpenAI GPT-4o">
-  <img src="https://img.shields.io/badge/Google-Gemini-orange.svg" alt="Google Gemini">
+  <img src="https://img.shields.io/badge/Google-Gemini-orange.svg" alt="Gemini-2.5-flash">
   <img src="https://img.shields.io/badge/AssemblyAI-AssemblyAI-orange.svg" alt="AssemblyAI">
 </div>
 
