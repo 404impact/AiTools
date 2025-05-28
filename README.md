@@ -221,12 +221,6 @@ The AiTools Suite implements several security best practices:
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
 <div align="center">
-  <p>Created with ❤️ by [Your Name]</p>
+  <p>Created with ❤️ by SoraKun</p>
 </div>
