@@ -1,0 +1,213 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Container for our two panels */
+.container {
+  display: flex;
+}
+
+/* Input Panel (Left Side) - Fixed Position */
+.input-panel {
+  width: 40%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 4px solid #ccc;
+  z-index: 1;
+}
+
+.input-panel h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Groups */
+.input-group {
+  width: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.input-group .input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.75rem 0.75rem 0.75rem 3rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #7ed6df;
+  box-shadow: 0 2px 8px rgba(126, 214, 223, 0.3);
+}
+
+.input-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button Group */
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.button-group button {
+  background: #7ed6df;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group button:hover {
+  background: #5ebec3;
+  transform: translateY(-2px);
+}
+
+.button-group button i {
+  margin-right: 0.5rem;
+}
+
+/* Enhanced Entries Panel (Right Side) */
+.entries-panel {
+  margin-left: 40%;
+  /* offset for fixed input panel */
+  width: 60%;
+  background: #fff;
+  padding: 2rem;
+  overflow-y: auto;
+  min-height: 100vh;
+  /* Optional subtle background pattern or color transition: */
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.entries-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.entries-panel ul {
+  list-style: none;
+}
+
+/* Enhanced styling for each journal entry card */
+.entries-panel li {
+  background: #ffffff;
+  border-left: 8px solid #7ed6df;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.entries-panel li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling for each entry */
+.entries-panel li h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+/* Content block within each entry */
+.entries-panel li p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+
+/* Metadata / timestamp styling */
+.entries-panel li small {
+  color: #777;
+  font-style: italic;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Optional Delete Button on Entry Card */
+.entries-panel li button {
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 1rem;
+}
+
+.entries-panel li button:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+}
+
+/* Responsive (Mobile Optimization) */
+@media (max-width: 768px) {
+
+  .input-panel,
+  .entries-panel {
+    position: static;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .input-panel {
+    border-right: none;
+    border-bottom: 4px solid #ccc;
+  }
+}

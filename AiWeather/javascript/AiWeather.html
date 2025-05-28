@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="aiweather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls-card">
+            <div class="controls">
+                <input type="text" id="location-name" placeholder="Enter location">
+                <input type="button" value="Click to Get Weather" id="fetchinfo">
+                <p>OR</p>
+                <input type="button" value="Locate Me" id="current-location">
+            </div>
+
+            <div class="query-container">
+                <input type="button" value="Ask Me Your Query" id="query-btn">
+                <input type="text" id="query-txt" placeholder="Enter your query">
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <div class="card weather-info-card">
+                <div class="weather-info">
+                    <p class="temp">Temperature: </p>
+                    <p class="feels-like">Feels Like: </p>
+                    <p class="city">City: </p>
+                    <p class="condition">Condition: </p>
+                    <p class="aqi">AQI: </p>
+                </div>
+            </div>
+            <div id="weather-description-card" class="card">
+                <div id="weather-description">
+                    <p>Ask me anything related to weather, etc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+    <!-- Load environment variables first -->
+    <script src="../../../env-config.js"></script>
+    <script src="AiWeather.js" type="module"></script>
+</body>
+</html>

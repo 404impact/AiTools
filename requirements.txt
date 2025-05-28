@@ -1,0 +1,32 @@
+# Core Web Framework
+flask
+flask-cors
+flask-restx
+
+# API Clients
+openai
+google-generativeai
+assemblyai
+
+# Web Scraping & Processing
+beautifulsoup4
+requests
+
+# Video & Audio Processing
+moviepy
+yt-dlp
+
+# Environment & Configuration
+python-dotenv
+
+# Weather API (for AIWeather)
+# geopy
+
+# # Utilities
+# numpy
+# pandas
+
+# Development Tools
+# pytest
+# black
+# flake8

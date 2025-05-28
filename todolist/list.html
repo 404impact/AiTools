@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Journal App</title>
+    <link rel="stylesheet" href="journal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="input-panel">
+    <h1>AI Journal ✨</h1>
+
+    <div class="input-group">
+      <i class="fas fa-heading input-icon"></i>
+      <input type="text" id="entryTitle" placeholder="Add Title...">
+    </div>
+
+    <div class="input-group">
+      <i class="fas fa-pencil-alt input-icon"></i>
+      <textarea id="entryInput" placeholder="Write something here 🍥🌈🦄"></textarea>
+    </div>
+
+    <div class="button-group">
+      <button id="addentry">
+        <i class="fas fa-cloud-upload-alt"></i>
+        Add Entry
+      </button>
+      <button id="summarize">
+        <i class="fas fa-magic"></i>
+        AI Summarize
+      </button>
+    </div>
+  </div>
+
+  <!-- The entries-panel now displays entry cards in a modern grid layout -->
+  <div class="entries-panel">
+    <h2>My Notes 💖</h2>
+    <ul id="journalList">
+      <!-- Example entry card -->
+      <li class="journal-card">
+        <div class="card-header">
+          <h3>Journal Title</h3>
+          <small>Updated 1 minute ago</small>
+        </div>
+        <p>This is an example of a modern journal entry. The layout uses a card-based grid design with clean, elegant typography.</p>
+        <button class="delete-btn">Delete</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+</body>
+<script type="importmap">
+    {
+  "imports": {
+    "@google/generative-ai": "https://esm.run/@google/generative-ai"
+  }
+}
+</script>
+<!-- Load environment variables first -->
+<script src="../env-config.js"></script>
+<script src="journal.js" type="module"></script>
+
+</html>

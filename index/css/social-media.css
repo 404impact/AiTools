@@ -1,0 +1,25 @@
+    /* code for social-media stars from here */
+    
+    #follow {
+        position: fixed;
+        /* background-color: black; */
+        width: 18%;
+        height: 8%;
+        right: 0;
+        bottom: 0;
+    }
+    /* border: 1px solid #fff; */
+    
+    .social-media {
+        padding-left: 6px;
+        padding-right: 4px;
+    }
+    
+    #footer {
+        position: fixed;
+        /* background-color: black; */
+        width: 82%;
+        height: 8%;
+        left: 0;
+        bottom: 0;
+    }

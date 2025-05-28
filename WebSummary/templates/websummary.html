@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Summarizer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="websummary.css">
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Web Summarizer ✨</h1>
+      <input type="text" id="url" name="url" placeholder="Enter the URL of the webpage to summarise." required />
+      <button type="submit" id = "btn">Get Answer</button>
+      <button id="copy-button" onclick="copySummary()">Copy</button>
+    <!-- </form> -->
+
+    <div class="output" id="summary-box" style="position: relative;">
+        Your summary will show up below. 🌸
+        <p id="summary-text"></p>
+      </div>
+  </div>
+  <script src="websummary.js"></script>
+</body>
+</html>

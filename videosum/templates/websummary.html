@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Summariser</title>
+</head>
+<link rel="stylesheet" href="websummary.css">
+<body>
+    <form action="/submit" method="post" target = "_blank">
+        <label for="content"><h1>YouTube Video Summarizer</h1></label><br> <br>
+        <!-- <textarea id="content" name="content" rows="4" cols="50"></textarea><br> -->
+        <input type="text" id = "content" name="content" placeholder="enter URL"> <br> <br>
+        <!-- <input type="text" name="" id="content"> -->
+        <input type="button" id = "btn" value="get answer">
+    </form>
+
+    <p id="output_container"></p>
+</body>
+<script src="websummary.js"></script>
+
+
+</html>
