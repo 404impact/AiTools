@@ -51,6 +51,7 @@ The suite follows a consistent architecture with modular design patterns, RESTfu
 - Detailed nutritional analysis and health assessment
 - Identification of potentially harmful ingredients
 - RESTful API with Swagger UI documentation
+- Uses OpenAI's GPT-4o for text generation
 
 **Usage:**
 ```bash
@@ -69,6 +70,7 @@ python foodscan.py
 - AI-powered summarization
 - Clean, paragraph-format summaries
 - RESTful API with Swagger UI documentation
+- Uses OpenAI's GPT-4o for summarization
 
 **Usage:**
 ```bash
@@ -88,6 +90,7 @@ python websummary.py
 - AI-powered summarization with OpenAI's GPT-4o
 - Output saving to text files
 - RESTful API with Swagger UI documentation
+- Uses OpenAI's GPT-4o for summarization
 
 **Usage:**
 ```bash
@@ -106,6 +109,7 @@ python vdsum.py
 - Weather and air quality data retrieval
 - Natural language queries about weather conditions
 - Modern, responsive UI
+- Uses Google Gemini for text generation
 
 **Usage:**
 ```bash
@@ -122,6 +126,7 @@ cd AIWeather
 - Journal entry capabilities
 - AI-powered insights and suggestions
 - Clean, intuitive interface
+- Uses Google Gemini for text generation
 
 **Usage:**
 ```bash
@@ -140,7 +145,6 @@ cd AiTools
 ```
 
 2. Install dependencies:
-```bash
 pip install -r requirements.txt
 ```
 
@@ -161,7 +165,7 @@ OPENAI_API_KEY=your_openai_api_key
 # AssemblyAI API
 ASSEMBLYAI_API_KEY=your_assemblyai_api_key
 
-# Google Gemini API (optional, for legacy support)
+# Google Gemini API
 GEMINI_API_KEY=your_gemini_api_key
 
 # Weather APIs
