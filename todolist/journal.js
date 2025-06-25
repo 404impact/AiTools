@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Access environment variables from window.ENV
-const gemini_key = window.ENV?.GEMINI_API_KEY || "AIzaSyDgRI4UVzfXMNAksUNgXS3K5ITkAoPqP74";
+const gemini_key = window.ENV?.GEMINI_API_KEY;
 
 document.addEventListener("DOMContentLoaded", () => {
     loadEntries();
